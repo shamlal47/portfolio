@@ -1,15 +1,9 @@
-import { cn } from "@/lib/utils";
 import React from "react";
 import { BentoGrid, BentoGridItem } from "./ui/Bento-Grid";
+import { items } from "@/data";
 
 function ProjectGrid() { 
- const items = [
-  {
-    title: "The Dawn of Innovation",
-    description: "Explore the birth of groundbreaking ideas and inventions.",
-    header: "",
-    icon:null,
-  },]
+
   return (
       <BentoGrid className="max-w-4xl mx-auto">
       {items.map((item, i) => (
