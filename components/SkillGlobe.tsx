@@ -4,7 +4,7 @@ import React from 'react'
 
 function SkillGlobe() {
   return (
-    <div>
+    <div className='p-4 md:p-8'>
     <span className='text-2xl sm:text-6xl font-bold text-center block mb-8 bg-gradient-to-b from-neutral-200 to-neutral-500 bg-clip-text text-transparent md:py-4 py-2 md:mt-5 mt-2'>Skills</span>
     <div className='overflow-hidden w-full max-w-4xl mx-auto py-8'>      <ul className='flex flex-wrap gap-6 py-4 text-white justify-center'>
         {skills.map((skill, index) => (
