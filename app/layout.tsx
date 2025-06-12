@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { FloatingNav } from "@/components/ui/Floating-Navbar";
+import { navigationItems } from "@/data";
 
 
 export const metadata: Metadata = {
@@ -15,6 +17,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="bg-black text-white antialiased">
+        <FloatingNav navItems={navigationItems}/>
         {children}
       </body>
     </html>

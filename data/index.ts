@@ -1,4 +1,5 @@
-import { ReactNode } from "react";
+import React, { JSX, ReactNode } from "react";
+import { Icons } from "@/components/ui/Icons";
 
 interface Item {
     title: string;
@@ -6,9 +7,19 @@ interface Item {
     header: ReactNode | null;
     icon: ReactNode | null;
 }
-interface skill{
+interface skill {
     name: string;
-    icon: ReactNode
+    icon: string;
+}
+interface navigationItem {
+    name: string;
+    link: string;
+    icon?: JSX.Element | undefined;
+}
+interface socialLink {
+    title?: string;
+    href?: string;
+    icon?: JSX.Element | string;
 }
 /**
  * 
@@ -40,7 +51,7 @@ export const items: Item[] = [{
     icon: null,
 },];
 
-export const skills = [{name: "JavaScript", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"},
+export const skills: skill[] = [{name: "JavaScript", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"},
 {name: "TypeScript", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"},
 {name: "React", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"},
 {name: "Next.js", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg"},
@@ -57,3 +68,48 @@ export const skills = [{name: "JavaScript", icon: "https://cdn.jsdelivr.net/gh/d
 {name: "HTML", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"},
 {name: "CSS", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"},
 {name: "Bootstrap", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"},];
+
+export const navigationItems: navigationItem[] = [{
+    name: "Home",
+    link: "#home",
+    icon: undefined,
+}, {
+    name: "Projects",
+    link: "#projects",
+    icon: undefined,
+}, {
+    name: "Skills",
+    link: "#skills",
+    icon: undefined,
+}, {
+    name: "Contact",
+    link: "#about",
+    icon: undefined,
+}]
+
+export const socialLinks = [{
+    title: "GitHub",
+    href: "https://github.com/shamlal47",
+    icon: React.createElement(Icons.GitHub, { className: "h-6 w-6 text-neutral-100" }),
+  },
+  {
+    title: "LinkedIn",
+    href: "https://linkedin.com/in/mohammed-shamlal-kp",
+    icon: React.createElement(Icons.LinkedIn, { className: "h-6 w-6 text-neutral-100" }),
+  },
+  {
+    title: "Twitter",
+    href: "https://twitter.com/_shamlal_",
+    icon: React.createElement(Icons.Twitter, { className: "h-6 w-6 text-neutral-100" }),
+  },
+  {
+    title: "Instagram",
+    href: "https://instagram.com/_shamlal_",
+    icon: React.createElement(Icons.Instagram, { className: "h-6 w-6 text-neutral-100" }),
+  },
+  {
+    title: "Email",
+    href: "mailto:Shamlalthegreat@gmail.com",
+    icon: React.createElement(Icons.Mail, { className: "h-6 w-6 text-neutral-100" }),   
+  },
+]
