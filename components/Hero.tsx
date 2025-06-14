@@ -17,11 +17,10 @@ function Hero() {
       <div className="pointer-events-none absolute inset-0 flex items-center justify-center bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_30%,black)] dark:bg-black"></div>
       
       <div className="relative z-20 bg-gradient-to-b from-neutral-200 to-neutral-500 bg-clip-text py-8 text-2xl font-bold text-transparent sm:text-6xl">    
-        <p className="mb-4 text-center">Hi, I'm <span className="text-yellow-500">Shamlal</span></p>
-        <p className="text-[15px] lg:text-[20px] text-center mb-8">A Full Stack Developer with a passion for building web applications and
+        <p className="mb-4 text-center">Hi, I&apos;m <span className="text-yellow-500">Shamlal</span></p>        <p className="text-[15px] lg:text-[20px] text-center mb-8">A Full Stack Developer with a passion for building web applications and
         exploring new technologies</p>
         <div className="flex justify-center">
-          <Button>Let's Connect</Button>
+          <Button>Let&apos;s Connect</Button>
         </div>
       </div>
     </div>

@@ -11,7 +11,7 @@ interface skill {
     name: string;
     icon: string;
 }
-interface navigationItem {
+export interface navigationItem {
     name: string;
     link: string;
     icon?: JSX.Element | undefined;
