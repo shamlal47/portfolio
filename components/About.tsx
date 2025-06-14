@@ -6,7 +6,7 @@ function About() {
     <div className='py-4 md:py-8'>
         <span className='text-2xl sm:text-6xl font-bold text-center block mb-8 bg-gradient-to-b from-neutral-200 to-neutral-500 bg-clip-text text-transparent md:py-4 py-2 md:mt-5 mt-2'>About</span>
         <div className='max-w-4xl mx-auto py-8 px-4 flex flex-col md:flex-row gap-10 md:gap-14 items-center'>
-            <div className='relative w-64 h-64 overflow-hidden rounded-2xl bg-yellow-500/80 p-2'>
+            <div className='relative w-64 h-64 overflow-hidden rounded-2xl border-2 border-yellow-500/80'>
                 <Image
                     src="/me.jpg"
                     alt="Profile picture"

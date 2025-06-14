@@ -16,11 +16,7 @@ interface navigationItem {
     link: string;
     icon?: JSX.Element | undefined;
 }
-interface socialLink {
-    title?: string;
-    href?: string;
-    icon?: JSX.Element | string;
-}
+
 /**
  * 
  */
