@@ -68,7 +68,7 @@ export const FloatingNav = ({
               "relative items-center flex justify-center w-full text-yellow-500 hover:text-yellow-300 transition-colors duration-200 px-4"
             )}
           >            <span className="block sm:hidden">{navItem.icon}</span>
-            <span className="hidden sm:block text-sm font-medium">{navItem.name}</span>
+            <span className="block text-sm font-medium overflow-hidden">{navItem.name}</span>
           </a>
         ))}
       </motion.div>
